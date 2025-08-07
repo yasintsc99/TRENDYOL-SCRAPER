@@ -12,40 +12,71 @@ A Python script to scrape seller information from Trendyol and export detailed r
 ## Setup
 
 1. **Install dependencies:**
+
+# 🚀 Trendyol Seller Data Scraper
+
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
+![Selenium](https://img.shields.io/badge/Selenium-Automation-green?logo=selenium)
+![Excel](https://img.shields.io/badge/Excel-Export-217346?logo=microsoft-excel)
+
+---
+
+## 🎯 Özellikler
+
+- 🔍 Trendyol mağaza verilerini otomatik olarak toplar
+- 📊 Sonuçları renkli ve filtreli Excel dosyasına aktarır
+- 🛡️ Kurumsal ve modüler Python mimarisi
+- 🖌️ Excel dosyasında başlık ve hücre stilleri, otomatik sütun genişliği
+
+---
+
+## ⚡ Kurulum
+
+1. Gerekli paketleri yükleyin:
    ```powershell
    pip install -r requirements.txt
    ```
-2. **Download Edge WebDriver:**
-   - [Microsoft Edge WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)
-   - Place the executable in your PATH or specify its location in the script.
-3. **Prepare your Excel file:**
-   - Create an Excel file with a column named `Mağaza Adı` in `Sheet1`.
-   - Update the script to use your file path.
+2. Edge WebDriver'ın sisteminizde kurulu olduğundan emin olun.
+3. `Trendyol Satıcı Bilgileri.xlsx` dosyasını oluşturun ve mağaza adlarını girin.
 
-## Usage
+---
 
-1. Edit `SellerDataScraper.py` and set your Excel file path:
+## 📝 Kullanım
+
+1. Excel dosya yolunu kodda belirtin:
    ```python
-   data = pd.read_excel(r"YOUR_EXCEL_FILE_PATH.xlsx", sheet_name="Sheet1")
+   excel_path = r"C:\Users\YASIN\Desktop\Trendyol Satıcı Bilgileri.xlsx"
    ```
-2. Run the script:
+2. Scripti çalıştırın:
    ```powershell
-   python deneme.py
+   python SellerDataScraper.py
    ```
+3. Sonuçlar `Trendyol Satıcı Bilgileri (Detaylı).xlsx` dosyasına kaydedilir.
 
-## Output
+---
 
-- The script creates `Trendyol Satıcı Bilgileri (Detaylı).xlsx` with:
-  - **Colorful header** (blue background, white bold text)
-  - **Styled cells** (Calibri font, centered)
-  - **Number formatting** for review and comment counts
-  - **Auto-sized columns**
-  - **Excel table with filters**
+## 📦 Çıktı
 
-## Example Screenshot
+- Renkli başlık satırı
+- Otomatik sütun genişliği
+- Filtreli tablo
+- Sayısal sütunlar için özel format
 
-![Excel Styles Example](https://user-images.githubusercontent.com/123456789/your-example-image.png)
+---
 
-## License
+## 🖼️ Ekran Görüntüsü
+
+![Excel Styles Example](https://img.icons8.com/color/96/000000/ms-excel.png)
+
+---
+
+## 💡 İpuçları
+
+- Mağaza adlarını Excel dosyasına ekleyin.
+- Kodunuzu kurumsal projelerde kolayca entegre edebilirsiniz.
+
+---
+
+## 📚 Lisans
 
 MIT
